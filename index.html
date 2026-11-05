@@ -9,6 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.watch{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid #e3ddd2;border-top:4px solid var(--copper);border-radius:8px;padding:20px 22px;text-decoration:none;color:var(--navy);margin-bottom:22px;transition:box-shadow .15s,transform .15s}
+.watch:hover{box-shadow:0 6px 18px rgba(14,27,51,.14);transform:translateY(-2px)}
+.watch .play{flex:0 0 52px;height:52px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;padding-left:3px}
+.watch:hover .play{background:var(--copper)}
+.watch-text{display:flex;flex-direction:column;min-width:0}
+.watch-big{font-family:var(--serif);font-weight:600;font-size:20px;line-height:1.25;margin:2px 0}
+.watch-small{font-size:13px;letter-spacing:.5px;color:#5b6472}
+.watch-text .watch-small:first-child{text-transform:uppercase;letter-spacing:2px;font-weight:600;color:var(--copper-dark)}
+</style>
 </head>
 <body>
 
@@ -48,15 +58,20 @@
     <h2>About me</h2>
     <div class="about">
       <div>
-        <p>I'm a junior at the University of Arizona's Eller College of Management, studying business management. I graduate in Fall 2027. I want to go into marketing, mostly the side where you try something, look at the numbers and change what isn't working.</p>
-        <p>I grew up in Silicon Valley, and my dad works in tech marketing, so that industry was never new to me. I now live in Tucson, where I deliver for Snag about 20 hours a week on top of a full class load.</p>
-        <p>Last year I was on the Brotherhood Committee at Theta Xi, planning events for the chapter.</p>
-        <p>The projects below are the best way to see how I work. The video on the right is the quick version.</p>
+        <p>I'm a junior at the University of Arizona's Eller College of Management, studying business management, and I graduate in Fall 2027. I'm hoping to go into marketing at a tech company.</p>
+        <p>I grew up in Silicon Valley, which is basically the tech capital of the world, so I've been around that industry my whole life. My dad was in tech marketing too, so it's something I've known about for a long time.</p>
+        <p>Outside the classroom, I've worked jobs where you stay busy and deal with people all day. At Snag I deliver 20-25 orders a shift, and each one has to be right and on time. If something goes wrong, I'm the one who talks to the customer. This past summer I was a fitness instructor at the Nike Tennis Camp at Stanford, working with a lot of kids and next to college tennis players from all over the world. Staying organized, talking clearly and being someone the team can count on is what I want to bring to a marketing team.</p>
+        <p>The projects below are the best way to see how I work, and the video is the quick version.</p>
       </div>
       <div class="side">
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/eVMv8vRvZeI" title="Davis Phillips professional persona video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <a class="watch" href="https://youtu.be/eVMv8vRvZeI" target="_blank" rel="noopener">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+          <span class="watch-text">
+            <span class="watch-small">Intro video</span>
+            <span class="watch-big">Watch my professional persona video</span>
+            <span class="watch-small">Opens on YouTube</span>
+          </span>
+        </a>
         <div class="panel">
           <h4>At a glance</h4>
           <ul>
@@ -90,7 +105,8 @@
       <div class="card">
         <div class="num">02</div>
         <h3>How I communicate</h3>
-        <p>Radian puts me in the Analytical group, with a proactivity score of -2.0 and a reactivity score of -6.0. For me that means I want the facts before I talk, and I stay calm when a team gets tense.</p>
+        <p>Radian puts me in the Analytical group, with a proactivity score of -2.0 and a reactivity score of -6.0. As an Analytical, I like process and structure, and I stick with strategies that have already worked. I'm motivated by data, detail and getting things right, and I like to study the alternatives before I commit to one.</p>
+        <p>Radian also points out the downside of this style, which is analysis paralysis: spending so long weighing options that the decision gets put off. If you work with me, expect a lot of questions. The best way to work with me is to match my accuracy and think things through before answering.</p>
         <img class="chart" src="assets/radian-style.png" alt="Radian communication style chart with Davis in the Analytical quadrant">
         <p class="cap">My result on Radian's communication style chart.</p>
       </div>
@@ -207,6 +223,16 @@
     </div>
 
     <h4 class="group">Work</h4>
+    <div class="row">
+      <div class="when">Summer 2026<br>Stanford, CA</div>
+      <div>
+        <h3>Fitness Instructor, Nike Tennis Camp at Stanford</h3>
+        <ul>
+          <li>Worked with many kids as a fitness instructor at the camp</li>
+          <li>Worked alongside college tennis players from around the world</li>
+        </ul>
+      </div>
+    </div>
     <div class="row">
       <div class="when">Sept 2025 to present<br>Tucson, AZ</div>
       <div>
